@@ -48,6 +48,59 @@
       <li><a href="https://www.google.com/"title="google">Google</a></li>
   </ol>
   <p><a href="ftp://user:pass123@tavalik.ru/Temp/file%20new.txt">21. ссылка на ftp серевер</a></p>
+  <h1>Форма</h1>
+  <form action="/" method="post">
+  <li><label>
+    ФИО:<br />
+    <input name="field-name-1"
+      value="начальное значение" />
+  </label><br /></li>
+  <li><label>
+    Телефон:<br />
+    <input name="field-name-tel"
+      value="Введите Телефон" />
+  </label><br /></li>
+  <label>
+    Текстовое поле email:<br />
+    <input name="field-email"
+      type="email"
+      placeholder="Введите вашу почту" />
+  </label><br />
+  <li><label>
+    Текстовое поле даты:<br />
+    <input name="field-date"
+      value="2019-08-13"
+      type="date" />
+  </label><br /></li>
+  Выберите пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+<li><label>
+  Любимый язык програмирования:
+  <br />
+  <select name="field-name-4[]"
+    multiple="multiple">
+    <option value="Значение1">Java</option>
+    <option value="Значение2" selected="selected">C++</option>
+    <option value="Значение3" selected="selected">HTML</option>
+    <option value="Значение4" selected="selected">C</option>
+  </select>
+</label><br /></li>
+<li><label>
+  Биография:<br />
+  <textarea name="field-name-2"></textarea>
+</label><br /></li>
+Ознакомление с контрактом:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        Ознакомлен</label><br />
+        Сохранить:
+        <input type="submit" value="Отправить" />
+  </form>
     <a id="bottom"></a>
 </body>
 
