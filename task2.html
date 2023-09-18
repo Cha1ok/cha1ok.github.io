@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="logo">
+                <img class="logo_img" src="http://images.orsk.ru/images/stories/2020/12_december/image_11122020154450_16076834901663.jpg" alt="логотип сайта">
+            </a>
+                <ul class="menu">
+                    <li calss="dowm">
+                        <a class="menu_lin" href="#">ссылка 1</a>
+                        <ul class="submenu">
+                            <li><a href="">Category</a></li>
+                            <li><a href="">Category</a></li>
+                            <li><a href="">Category</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <a class="menu_lin" href="#">ссылка 2</a>
+                    </li>
+                    <li class="menu_item">
+                        <a class="menu_lin" href="#">Ссылка 3</a>
+                    </li>
+                </ul>       
+            
+            <div class="bg_color_near_img"><h1>Текст</h1></div>
+        </div>
+    </header>
+    <div class="main1">
+        <nav class="main_nav">
+            <ul class="main_link">
+                <li calss="main_item">
+                    <a class="main_lin" href="#">Ссылка</a>
+                </li>
+                <li class="main_item">
+                    <a class="main_lin" href="#">Ссылка</a>
+                </li>
+                <li class="main_item">
+                    <a class="main_lin" href="#">Ссылка</a>
+                </li>
+            </ul>
+        <div class="rectangle text_with_shadows"><a class="main_lin" href="#">Финальная ссылка</a></div>  
+    </div>  
+        <div class="main_table">
+            <h1>Таблица</h1>
+            <table class="table">
+                <tr>
+                    <td>&nbsp;</td>
+                    <th>Колонка 1</th>
+                    <th>Колонка 2</th>
+                    <th>Колонка 3</th>
+                    <th>Колонка 4</th>
+                    <th>Колонка 5</th>
+                </tr>
+                <tr>
+                    <th class="nechet">Название 1</th>
+                    <th colspan="2" class="nechet">Строка 1</th>
+                    <th class="nechet">Строка 2</th>
+                    <th class="nechet">Строка 3</th>
+                    <th class="nechet">Строка 4</th>
+                </tr>
+                 <tr>
+                    <th class="chet">Название 2</th>
+                    <th class="chet">Строка 1</th>
+                    <th class="chet">Строка 2</th>
+                    <th class="chet">Строка 3</th>
+                    <th class="chet">Строка 4</th>
+                    <th class="chet">Строка 5</th>
+                 </tr>
+                 <tr>
+                    <th class="nechet">Название 3</th>
+                    <th class="nechet">Строка 1</th>
+                    <th class="nechet">Строка 2</th>
+                    <th class="nechet" colspan="2">Строка 3</th>
+                    <th class="nechet">Строка 4</th>
+                 </tr>
+                 <tr>
+                    <th class="chet">Название 4</th>
+                    <th class="chet">Строка 1</th>
+                    <th class="chet">Строка 2</th>
+                    <th class="chet">Строка 3</th>
+                    <th class="chet">Строка 4</th>
+                    <th class="chet">Строка 5</th>
+                 </tr>
+                 <tr>
+                    <th class="nechet">Название 5</th>
+                    <th class="nechet">Строка 1</th>
+                    <th class="nechet" colspan="2">Строка 2</th>
+                    <th class="nechet">Строка 3</th>
+                    <th class="nechet">Строка 4</th>
+                 </tr>
+                 <tr>
+                    <th class="chet">Название 6</th>
+                    <th class="chet">Строка 1</th>
+                    <th class="chet">Строка 2</th>
+                    <th class="chet">Строка 3</th>
+                    <th class="chet">Строка 4</th>
+                    <th class="chet">Строка 5</th>
+                 </tr>
+            </table>
+        </div>
+        <h1>Форма</h1>
+        <div class="Form">
+            <form action="https://www.youtube.com" method="post" class="Form_place">
+                <li><label>
+                  ФИО:<br />
+                  <input name="field-name-1"
+                    value="" required />
+                </label><br /></li>
+                <li><label>
+                  Телефон:<br />
+                  <input name="field-name-tel"
+                    value="" required/>
+                </label><br /></li>
+                <label>
+                  Текстовое поле email:<br />
+                  <input name="field-email"
+                    type="email"
+                    placeholder="Введите вашу почту" />
+                </label><br />
+                <li><label>
+                  Текстовое поле даты:<br />
+                  <input name="field-date"
+                    value=""
+                    type="date" required/>
+                </label><br /></li>
+                Выберите пол:<br />
+                    <label><input type="radio" checked="checked"
+                      name="radio-group-1" value="Значение1" />
+                      Мужской</label>
+                    <label><input type="radio"
+                      name="radio-group-1" value="Значение2" />
+                      Женский</label><br />
+              <li><label>
+                Любимый язык програмирования:
+                <br />
+                <select name="field-name-4[]"
+                  multiple="multiple">
+                  <option value="Значение1">Java</option>
+                  <option value="Значение2" selected="selected">C++</option>
+                  <option value="Значение3" selected="selected">HTML</option>
+                  <option value="Значение4" selected="selected">C</option>
+                </select>
+              </label><br /></li>
+              <li><label>
+                Биография:<br />
+                <textarea name="field-name-2"></textarea>
+              </label><br /></li>
+              Ознакомление с контрактом:<br />
+                    <label><input type="checkbox" checked="checked"
+                      name="check-1" />
+                      Ознакомлен</label><br />
+                      Сохранить:
+                      <input type="submit" value="Отправить" />
+                </form>
+        </div>
+        </nav>
+        <footer class="footer">
+            &copy; Моё
+        </footer>
+</body>
+</html>
