@@ -13,7 +13,7 @@
   <li><a href=".//?id=element">ссылка с параметром id</a></li>
   <p><a href="http://www.kubsu.ru">1. абсолютную гиперссылку на главную страницу сайта kubsu.ru;</a></p>
   <p><a href="https://www.kubsu.ru/index.php">2. абсолютную на главную сайта kubsu.ru в протоколе https;</a></p>
-  <p><img src="https://www.kubsu.ru/sites/default/files/styles/news_large/public/news/dji_0464_4.jpg?itok=xmjEqPJg" alt="цветок" style="width: 600px;">3.изображение</p>
+  <p><a href="https://www.kubsu.ru/sites/default/files/styles/news_large/public/news/dji_0464_4.jpg?itok=xmjEqPJg"><img src="https://www.kubsu.ru/sites/default/files/styles/news_large/public/news/dji_0464_4.jpg?itok=xmjEqPJg" alt="цветок" style="width: 600px;">3.изображение</p></a>
   <p><a
       href="https://www.kubsu.ru/sites/default/files/styles/news_large/public/news/dji_0464_4.jpg?itok=xmjEqPJg">3.Ссылка
       на изображение</a></p>
@@ -48,7 +48,60 @@
       <li><a href="https://www.google.com/"title="google">Google</a></li>
   </ol>
   <p><a href="ftp://user:pass123@tavalik.ru/Temp/file%20new.txt">21. ссылка на ftp серевер</a></p>
-  <p><a href="task2.html">2 задание</a></p>
+  <div class="Form">
+    <form action="https://www.youtube.com" method="post" class="Form_place">
+        <li><label>
+          ФИО:<br />
+          <input name="field-name-1"
+            value="" required />
+        </label><br /></li>
+        <li><label>
+          Телефон:<br />
+          <input name="field-name-tel"
+            value="" required/>
+        </label><br /></li>
+        <label>
+          Текстовое поле email:<br />
+          <input name="field-email"
+            type="email" required
+            placeholder="Введите вашу почту" />
+        </label><br />
+        <li><label>
+          Текстовое поле даты:<br />
+          <input name="field-date"
+            value=""
+            type="date" required/>
+        </label><br /></li>
+        Выберите пол:<br />
+            <label><input type="radio" checked="checked"
+              name="radio-group-1" value="Значение1" />
+              Мужской</label>
+            <label><input type="radio"
+              name="radio-group-1" value="Значение2" />
+              Женский</label><br />
+      <li><label>
+        Любимый язык програмирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Java</option>
+          <option value="Значение2" selected="selected">C++</option>
+          <option value="Значение3" selected="selected">HTML</option>
+          <option value="Значение4" selected="selected">C</option>
+        </select>
+      </label><br /></li>
+      <li><label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br /></li>
+      Ознакомление с контрактом:<br />
+            <label><input type="checkbox" checked="checked"
+              name="check-1" required />
+              Ознакомлен</label><br />
+              Сохранить:
+              <input type="submit" value="Отправить" />
+        </form>
+</div>
     <a id="bottom"></a>
 </body>
 
