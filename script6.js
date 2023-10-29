@@ -35,6 +35,14 @@ function click1() {
     if(r3.checked){
         r.innerHTML = f1[0].value * r3.value;
     }
+    if(isNaN(f1[0].value)){
+      alert("Это не цифра");
+      r.innerHTML("z")
+    }
+    if(f1[0].value<0){
+      alert("- нельзя");
+      r.innerHTML("нельзя")
+    }
     let s = document.getElementsByName("myselect");
     console.log(s[0].value);
     return false;
@@ -65,6 +73,9 @@ function click1() {
         let r = event.target;
         console.log(r.value);
       });    
+    });
+    
+  });
     });
     
   });
