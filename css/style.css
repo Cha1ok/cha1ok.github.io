@@ -2474,6 +2474,11 @@ h3 {
   right: 4%;
 }
 
+.Reservation_area .row-no-gutters{
+  display: flex;
+  justify-content: center;
+}
+
 /* line 15, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_reservation.scss */
 .Reservation_area .rev_icon_2 {
   position: absolute;
