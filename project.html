@@ -635,43 +635,82 @@
                 </div>
             </div>
             <div class="row-no-gutters">
+                <!-- <div class="col-xl-6 col-lg-6"> -->
+                    <!-- <div class="map_area">
+                        <div id="map" style="height: 480px; position: relative; overflow: hidden;"> </div>
+                        <script>
+                            function initMap() {
+                                var uluru = {
+                                    lat: -25.363,
+                                    lng: 131.044
+                                };
+                                var grayStyles = [{
+                                        featureType: "all",
+                                        stylers: [{
+                                                saturation: -90
+                                            },
+                                            {
+                                                lightness: 50
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elementType: 'labels.text.fill',
+                                        stylers: [{
+                                            color: '#ccdee9'
+                                        }]
+                                    }
+                                ];
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    center: {
+                                        lat: -31.197,
+                                        lng: 150.744
+                                    },
+                                    zoom: 9,
+                                    styles: grayStyles,
+                                    scrollwheel: false
+                                });
+                            }
+                        </script>
+                        <script
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
+                        </script>
+                    </div> -->
+                <!-- </div> -->
                 <div class="col-lg-6">
-                    <div class="book_Form">
+                    <form class="book_Form" method="post" action="https://api.slapform.com/nLYDysLXz">
                         <h3>Book a Table</h3>
                         <div class="row ">
                             <div class="col-lg-6">
                                 <div class="input_field mb_15">
-                                    <input type="text" placeholder="Your Name">
+                                    <input type="text" placeholder="Your Name" name="name">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="input_field mb_15">
-                                    <input type="text" placeholder="Phone no.">
+                                    <input type="text" placeholder="Phone no." name="tel">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="input_field">
-                                    <input id="datepicker2" placeholder="Date">
+                                    <input id="datepicker2" placeholder="Date" name="date">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="input_field">
-                                    <div class="input_field">
-                                        <select class="wide">
-                                            <option data-display="Dinner">Dinner</option>
-                                            <option value="1">Dinner</option>
-                                            <option value="1">Dinner</option>
-                                        </select>
+                                    <div class="input_field1" >
+                                        <textarea name="message" class="message"></textarea>
+                                        <div class="label__text">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="input_field">
-                                    <select class="wide">
-                                        <option data-display="Person">Person</option>
-                                        <option value="1">Person</option>
-                                        <option value="1">Person</option>
-                                    </select>
+                                    <input type="email" name="email" placeholder="email">
+                                        <div class="label__text">
+                                    
+                                        </div>
                                 </div>
                             </div>
                             <div class="col-xl-12">
@@ -700,11 +739,24 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+    <script type="text/javascript">
+    var slapform = new Slapform();
+    slapform.submit({
+    form: 'hZCz9iWjI',
+    })
+    .then(function (response) {
+    console.log('Success', response)
+    })
+    .catch(function (e) {
+    console.error('Fail', e)
+    })
+    </script>
 
     <!-- footer_start  -->
     <footer class="footer">
