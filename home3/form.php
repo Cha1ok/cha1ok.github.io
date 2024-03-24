@@ -40,11 +40,16 @@
         </label>
         <label>
             <select name="lang[]" id="lang" multiple="multiple">
-                <option value="Значение1">Java</option>
-                <option value="Значение2" selected="selected">C++</option>
-                <option value="Значение3" selected="selected">HTML</option>
-                <option value="Значение4" selected="selected">C</option>
-                <option value="Значение5" selected="select">Js</option>
+            <option value="Pascal">Pascal</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Haskel">Haskel</option>
+              <option value="Clojure">Clojure</option>
+              <option value="Scala">Scala</option>
             </select>
             <div class="label__text">Любимый язык програмирования</div>
         </label>
