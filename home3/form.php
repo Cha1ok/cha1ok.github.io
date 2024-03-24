@@ -30,11 +30,11 @@
             </div>
         </label>
         <label>
-            <label><input type="radio" checked="checked"
-                name="radio" value="Значение1" />
+            <label><input type="radio"
+                name="radio" value="m" />
                 Мужской</label>
               <label><input type="radio"
-                name="radio" value="Значение2" />
+                name="radio" value="f" />
                 Женский</label>
             <div class="label__text">ваш пол</div>
         </label>
