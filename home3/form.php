@@ -38,7 +38,7 @@
                 Женский</label>
             <div class="label__text">ваш пол</div>
         </label>
-        <label>
+        <label class="input">
             <select name="lang[]" id="lang" multiple="multiple">
             <option value="Pascal">Pascal</option>
               <option value="C">C</option>
